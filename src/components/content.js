@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Item from './item';
 
-const data = {
+const telInfo = {
   iPhone: [
     { title: 'iPhone11', money: '5999' },
     { title: 'iPhoneXS', money: '5399' },
@@ -18,15 +18,15 @@ export default class Content extends Component {
   render() {
     return (
       <div className="myContent">
-        <div className="myTitle">iPhone</div>
+        <h3>iPhone</h3>
         <div className="arow">
-          {data.iPhone.map((res) => (
+          {telInfo.iPhone.map((res) => (
             <Item title={res.title} money={res.money} key={res.money} />
           ))}
         </div>
-        <div className="myTitle">HUAWEI</div>
+        <h3>HUAWEI</h3>
         <div className="arow">
-          {data.huawei.map((res) => (
+          {telInfo.huawei.map((res) => (
             <Item title={res.title} money={res.money} key={res.money} />
           ))}
         </div>

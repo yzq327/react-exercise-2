@@ -1,14 +1,11 @@
 .myHead {
     height: 70px;
     color: #fff;
+    background-color:#0066FF ;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    .headLeft {
-      font-size: 30px;
-      font-weight: bolder;
-    }
+    padding: 20px;    
     .headRight {
       img {
         width: 20px;
