@@ -5,18 +5,17 @@ import imgUrl from '../assets/product_image_placeholder.png';
 export default class Item extends Component {
   render() {
     return (
-      <div className="card cardOne">
+      <div className="cardOne">
         <div className="cardTitle">{this.props.title}</div>
-        <img src={imgUrl} className="profuctImage" />
-        <div className="card-body myBottom">
+        <img src={imgUrl} className="productImg" />
+        <div className=" myBottom">
           <span className="money">￥{this.props.money}</span>
-          <button className="btn btn-primary addBtn">add to cart</button>
+          <button className="addBtn">add to cart</button>
         </div>
       </div>
     );
   }
 }
-
 Item.propTypes = {
   title: PropTypes.string,
   money: PropTypes.string,
