@@ -75,7 +75,7 @@ class Content extends Component {
             <p className="cardTitle">{this.state.products[0].name}</p>
             <img src={imgUrl} className="productImg"></img>
             <div className=" myBottom">
-              <span className="money">￥{this.state.products[0].price}</span>
+              <span className="money">{this.state.products[0].price}</span>
               <button className="addBtn" onClick={this.props.buy}>
                 add to cart
               </button>
@@ -85,7 +85,7 @@ class Content extends Component {
             <p className="cardTitle">{this.state.products[1].name}</p>
             <img src={imgUrl} className="productImg"></img>
             <div className=" myBottom">
-              <span className="money">￥{this.state.products[1].price}</span>
+              <span className="money">{this.state.products[1].price}</span>
               <button className="addBtn" onClick={this.props.buy}>
                 add to cart
               </button>
@@ -95,7 +95,7 @@ class Content extends Component {
             <p className="cardTitle">{this.state.products[2].name}</p>
             <img src={imgUrl} className="productImg"></img>
             <div className=" myBottom">
-              <span className="money">￥{this.state.products[2].price}</span>
+              <span className="money">{this.state.products[2].price}</span>
               <button className="addBtn" onClick={this.props.buy}>
                 add to cart
               </button>
@@ -108,7 +108,7 @@ class Content extends Component {
             <p className="cardTitle">{this.state.products[3].name}</p>
             <img src={imgUrl} className="productImg"></img>
             <div className=" myBottom">
-              <span className="money">￥{this.state.products[3].price}</span>
+              <span className="money">{this.state.products[3].price}</span>
               <button className="addBtn" onClick={this.props.buy}>
                 add to cart
               </button>
@@ -118,7 +118,7 @@ class Content extends Component {
             <p className="cardTitle">{this.state.products[4].name}</p>
             <img src={imgUrl} className="productImg"></img>
             <div className=" myBottom">
-              <span className="money">￥{this.state.products[4].price}</span>
+              <span className="money">{this.state.products[4].price}</span>
               <button className="addBtn" onClick={this.props.buy}>
                 add to cart
               </button>
@@ -128,7 +128,7 @@ class Content extends Component {
             <p className="cardTitle">{this.state.products[5].name}</p>
             <img src={imgUrl} className="productImg"></img>
             <div className=" myBottom">
-              <span className="money">￥{this.state.products[5].price}</span>
+              <span className="money">{this.state.products[5].price}</span>
               <button className="addBtn" onClick={this.props.buy}>
                 add to cart
               </button>
