@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import imgUrl from '../assets/product_image_placeholder.png';
 //import Item from './item';
-const URL = 'http://localhost:3000/procucts';
+const URL = 'http://localhost:3000/products';
 
 // const telInfo = {
 //   iPhone: [
@@ -22,24 +22,44 @@ class Content extends Component {
     super();
     this.state = {
       products: [
-        { category: '', name: '', price: '' },
-        { category: '', name: '', price: '' },
-        { category: '', name: '', price: '' },
-        { category: '', name: '', price: '' },
-        { category: '', name: '', price: '' },
-        { category: '', name: '', price: '' },
+        { category: '', price: '', name: '' },
+        {
+          category: '',
+          price: '',
+          name: '',
+        },
+        {
+          category: '',
+          price: '',
+          name: '',
+        },
+        {
+          category: '',
+          price: '',
+          name: '',
+        },
+        {
+          category: '',
+          price: '',
+          name: '',
+        },
+        {
+          category: '',
+          price: '',
+          name: '',
+        },
       ],
     };
   }
   componentDidMount() {
     async function fetchDate(url) {
-      const result = await fetch(url).then((response) => response.json());
-      return result;
+      const response = await fetch(url).then((response) => response.json());
+      return response;
     }
     fetchDate(URL)
-      .then((result) => {
+      .then((response) => {
         this.setState({
-          procucts: result,
+          products: response,
         });
       })
       .catch((error) => {
